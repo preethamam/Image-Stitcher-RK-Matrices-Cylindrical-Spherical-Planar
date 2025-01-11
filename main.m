@@ -35,7 +35,7 @@ Start = tic;
 % 0 - No blend | 1 - Feathering | 2 - Gain compensation + multiband blending
 blendFeather = 2;  
 imagesFolder = 'images';
-Inputs;
+inputs;
 
 %--------------------------------------------------------------------------
 % Load files
