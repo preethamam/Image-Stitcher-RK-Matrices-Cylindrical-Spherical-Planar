@@ -21,9 +21,24 @@ For the full automatic panorama stitching functionality with feature extraction,
 | Translation motion model | 
 | ![pano_trans](assets/translation_panorama.png) |
 
-The feathering does not help in a smooth blending. This is quite natural as the feathering algorithm intensifies the difference at the image boundaries if the Gaussian filter size is large. Please feel free to tinker the input paraleters for the feather, linear or multiband blending. This feathering package is only for the demonstration purpose of trivial blending approach. The main objective of this package is to showcase the cylindrical, spherical and planar panorama stitching capabilities given the Rotation (*R*) and Camera Intrinsics (*K*) matrices, which I feel a nice addition of viable solution to the internet. For the sophisticated blending such as gain compensation and multiband blending including the bundle adjustment. Please refer to [AutoPanoStitch](https://github.com/preethamam/AutomaticPanoramicImageStitching-AutoPanoStitch) library.
+All the above panorams are with gain compensation and multiband blending. The feathering does not help in a smooth blending. This is quite natural as the feathering algorithm intensifies the difference at the image boundaries if the Gaussian filter size is large. Please feel free to tinker the input paraleters for the feather, linear or multiband blending. This feathering package is only for the demonstration purpose of trivial blending approach. The main objective of this package is to showcase the cylindrical, spherical and planar panorama stitching capabilities given the Rotation (*R*) and Camera Intrinsics (*K*) matrices, which I feel a nice addition of viable solution to the internet. For the sophisticated blending such as gain compensation and multiband blending including the bundle adjustment. Please refer to [AutoPanoStitch](https://github.com/preethamam/AutomaticPanoramicImageStitching-AutoPanoStitch) library.
 
 The sample dataset used in this package is the sub-set images selected from the [Adobe dataset](https://sourceforge.net/adobe/adobedatasets), `Carmel` folder.
+
+# Usage
+Change the folder names as `images` or `images 2`. Matlab snippet is given below:
+
+```matlab
+imagesFolder = 'images';
+
+if strcmp(imagesFolder, 'images')
+    % For images folder
+    load cameras.mat 
+else
+    % For images 2 folder
+    load cameras2.mat %#ok<*UNRCH> 
+end
+```
 
 # Requirements
 MATLAB <br />
