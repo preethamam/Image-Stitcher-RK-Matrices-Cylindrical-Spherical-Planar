@@ -108,14 +108,14 @@ for i = 1:length(transformationtype)
     word = transformationtype{i};
     transTitle = strcat(upper(word(1)), lower(word(2:end)));
 
-    nexttile; imshow(panorama{1}); title([transTitle ' ' warpType{1}])        
-    nexttile; imshow(croppedPanorama{1}); title([transTitle ' ' warpType{1} ' ' 'cropped'])
+    nexttile; imshow(panorama{1}); title([transTitle ' ' warpType{1}], 'fontsize', 25)        
+    nexttile; imshow(croppedPanorama{1}); title([transTitle ' ' warpType{1} ' ' 'cropped'], 'fontsize', 25)
 
-    nexttile; imshow(panorama{2}); title([transTitle ' ' warpType{2}])     
-    nexttile; imshow(croppedPanorama{2}); title([transTitle ' ' warpType{2} ' ' 'cropped'])
+    nexttile; imshow(panorama{2}); title([transTitle ' ' warpType{2}], 'fontsize', 25)     
+    nexttile; imshow(croppedPanorama{2}); title([transTitle ' ' warpType{2} ' ' 'cropped'], 'fontsize', 25)
 
-    nexttile; imshow(panorama{3}); title([transTitle ' ' warpType{3}])
-    nexttile; imshow(croppedPanorama{3}); title([transTitle ' ' warpType{3} ' ' 'cropped'])
+    nexttile; imshow(panorama{3}); title([transTitle ' ' warpType{3}], 'fontsize', 25)
+    nexttile; imshow(croppedPanorama{3}); title([transTitle ' ' warpType{3} ' ' 'cropped'], 'fontsize', 25)
     
     % Export graphics
     ax = gcf;
