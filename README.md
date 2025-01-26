@@ -44,8 +44,8 @@ end
 
 # Requirements
 MATLAB <br />
-MATLAB Image Processing Toolbox <br />
-MATLAB Parallel Computing Toolbox
+Image Processing Toolbox <br />
+Parallel Computing Toolbox
 
 # Feedback
 Please rate and provide feedback for the further improvements.
